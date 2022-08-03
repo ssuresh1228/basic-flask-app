@@ -7,3 +7,7 @@ application = Flask(__name__)
 def hello_world():
     return 'Hello World'
 
+
+@application.route('/readme')
+def newpage():
+    return 'this is a new page'
